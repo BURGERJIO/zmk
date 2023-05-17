@@ -5,8 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 / {
@@ -17,11 +17,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
+                <&kp LEFT_GUI>,
                 <&macro_tap>,
                 <&kp C>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LEFT_GUI>;
         };
         cut: cut {
             compatible = "zmk,behavior-macro";
@@ -41,11 +41,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
+                <&kp LEFT_GUI>,
                 <&macro_tap>,
                 <&kp V>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LEFT_GUI>;
         };
         all: all {
             compatible = "zmk,behavior-macro";
@@ -100,11 +100,11 @@
             //                             |   PG_DOWN | LOWER |           ---           |  DEL  |   END     |
 
             bindings = <
-     &kp ESC        &kp N1  &kp N2    &kp N3  &kp N4     &kp N5   &kp GRAVE  &kp MINUS     &kp N6  &kp N7     &kp N8    &kp N9           &kp N0  &kp BACKSPACE
-     &kp TAB         &kp Q   &kp W     &kp E   &kp R      &kp T  &kp DELETE  &kp EQUAL      &kp Y   &kp U      &kp I     &kp O            &kp P       &kp BSLH
+     &kp ESC        &kp N1  &kp N2    &kp N3  &kp N4     &kp N5   &kp GRAVE  &kp MINUS     &kp N6  &kp N7     &kp N8    &kp N9           &kp N0       &kp BSLH
+     &kp TAB         &kp Q   &kp W     &kp E   &kp R      &kp T  &kp DELETE  &kp EQUAL      &kp Y   &kp U      &kp I     &kp O            &kp P  &kp BACKSPACE
 &kp CAPSLOCK         &kp A   &kp S     &kp D   &kp F      &kp G                             &kp H   &kp J      &kp K     &kp L         &kp LBKT       &kp RBKT
    &kp LSHFT         &kp Z   &kp X     &kp C   &kp V      &kp B                             &kp B   &kp N  &kp COMMA   &kp DOT         &kp SEMI        &kp SQT
-   &kp LCTRL  &kp LEFT_GUI   &mo 1  &kp LALT                                                                   &kp M  &kp BSLH  &kp RIGHT_SHIFT      &kp RCTRL
+   &kp LCTRL  &kp LEFT_GUI   &mo 1  &kp LALT                                                                   &kp M  &kp FSLH  &kp RIGHT_SHIFT      &kp RCTRL
                                                &copy                                               &paste
                                                       &kp SPACE      &kp UP   &kp LEFT  &kp SPACE
                                                       &kp ENTER    &kp DOWN  &kp RIGHT  &kp ENTER
